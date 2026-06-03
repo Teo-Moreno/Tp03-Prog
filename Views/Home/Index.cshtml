@@ -1,8 +1,21 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<h1>Adivina la Palabra</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<p>
+  Intenta descubrir la palabra oculta ingresando una letra por vez. Tienes una
+  cantidad limitada de intentos.
+</p>
+
+<div id="palabraOculta">_ _ _ _ _ _ _ _</div>
+
+<div id="intentosRestantes">Intentos restantes: 10</div>
+
+<div id="mensajeFinal"></div>
+
+<form action="#">
+  <label for="letra">Ingrese una letra:</label>
+  <input type="text" id="letra" />
+
+  <input type="hidden" id="palabra" value="@ViewBag.Palabra" />
+
+  <button onclick="ArriesgarLetra()">Arriesgar letra</button>
+</form>
