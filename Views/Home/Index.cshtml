@@ -5,17 +5,28 @@
   cantidad limitada de intentos.
 </p>
 
-<div id="palabraOculta">_ _ _ _ _ _ _ _</div>
+<div>
+  <p id="letra0">_</p>
+  <p id="letra1">_</p>
+  <p id="letra2">_</p>
+  <p id="letra3">_</p>
+  <p id="letra4">_</p>
+  <p id="letra5">_</p>
+  <p id="letra6">_</p>
+  <p id="letra7">_</p>
+</div>
 
 <div id="intentosRestantes">Intentos restantes: 10</div>
 
-<div id="mensajeFinal"></div>
+<div id="Mensaje"></div>
 
-<form action="#">
+<form>
   <label for="letra">Ingrese una letra:</label>
-  <input type="text" id="letra" />
+  <input type="text" id="letra" maxlength="1" />
 
   <input type="hidden" id="palabra" value="@ViewBag.Palabra" />
 
-  <button onclick="ArriesgarLetra()">Arriesgar letra</button>
+  <button type="button" onclick="ArriesgarLetra(event)">
+    Arriesgar letra
+  </button>
 </form>
