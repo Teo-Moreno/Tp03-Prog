@@ -11,7 +11,7 @@ public class PalabrasAhorcado
 
     public string ObtenerPalabra()
     {
-        Random rnd = Random new();
+        Random rnd = new Random();
         return palabras[rnd.Next(0,palabras.Count)];
     }
 }
