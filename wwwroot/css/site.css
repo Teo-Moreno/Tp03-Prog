@@ -29,3 +29,103 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+
+/* Fondo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+p {
+    color: #555;
+}
+
+/* Contenedor de letras */
+div:first-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+/* Letras */
+[id^="letra"] {
+    width: 50px;
+    height: 60px;
+    border-bottom: 3px solid #333;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #258cfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Intentos restantes */
+#intentosRestantes {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+/* Mensajes */
+#Mensaje {
+    min-height: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+}
+
+/* Input */
+#letra {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: 2px solid #258cfb;
+    border-radius: 8px;
+
+    display: block;
+    margin: 10px auto;
+}
+
+/* Botón */
+button {
+    background-color: #258cfb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1f73d6;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
